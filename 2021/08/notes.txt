@@ -1,0 +1,56 @@
+      0:      1:      2:      3:      4:
+ aaaa    ....    aaaa    aaaa    ....
+b    c  .    c  .    c  .    c  b    c
+b    c  .    c  .    c  .    c  b    c
+ ....    ....    dddd    dddd    dddd
+e    f  .    f  e    .  .    f  .    f
+e    f  .    f  e    .  .    f  .    f
+ gggg    ....    gggg    gggg    ....
+
+  5:      6:      7:      8:      9:
+ aaaa    aaaa    aaaa    aaaa    aaaa
+b    .  b    .  .    c  b    c  b    c
+b    .  b    .  .    c  b    c  b    c
+ dddd    dddd    ....    dddd    dddd
+.    f  e    f  .    f  e    f  .    f
+.    f  e    f  .    f  e    f  .    f
+ gggg    gggg    ....    gggg    gggg
+
+
+
+{1,4,7,8}
+ 0:d
+ 1:[ef]:e
+ 2:[ab]:a
+ 3:[fe]:f
+ 4:[cg]:g
+ 5:[ba]:b
+ 6:[gc]:c
+
+{
+  0:set(l=3) - set(l=2)
+  1:set(l=4) - set(l=2)
+  2:set(l=2)
+  3:set(l=4) - set(l=2)
+  4:set(l=7) - set(l=3) - set(l=4)
+  5:set(l=2)
+  6:
+}
+
+Of the 3 l=5 words, the letters that appear just once are [1,4]
+ 
+{2,3,5}
+  c d  f   b   e   >  bcdef    e=1
+[46]0[13][25][31]  > a cd fg   g=4
+                   > abcd f
+  g   c d  f   a   
+[64][46]0[13][52]  
+
+  f   b   c   a d
+[13][25][46][52]0  
+
+{0,6,9}
+ cefabd > abcdef  > ab6013     a=2
+ cdfgeb >  bcdefg >  b60134
+ cagedb > abcde g > ab601 4
+
